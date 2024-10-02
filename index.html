@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Домашнее задание 1.5 -->
+    <title>Веб-страница по БЭМ</title>
+</head>
+<body>
+    <!-- Блок header -->
+    <header class="header">
+        <h1 class="header__title">Привет! Эта страница создана по БЭМ методологии.</h1>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="about.html" class="header__menu-link">Перейдите на страницу, чтобы познакомиться со мной</a></li>
+                <li class="header__menu-item"><a href="#projects" class="header__menu-link">Посмотрите мои проекты</a></li>
+                <li class="header__menu-item"><a href="contact.html" class="header__menu-link">Здесь указаны мои контакты</a></li>
+            </ul>
+        </nav>
+        <!-- Картинка в header -->
+        <figure class="header__image">
+            <img src="img/bem metod.jpg" alt="Пример изображения" class="header__img">
+            <figcaption class="header__caption">БЭМ методология создана в Яндексе</figcaption>
+        </figure>
+    </header>
+
+    <!-- Блок main -->
+    <main class="main-content">
+    
+        <!-- Блок projects -->
+        <section class="projects" id="projects">
+            <h2 class="projects__title">Выполненные мною проекты</h2>
+            <ul class="projects__list">
+                <li class="projects__item">
+                    <h3 class="projects__item-title">Проект 1</h3>
+                    <p class="projects__item-description">Описание проекта 1.</p>
+                    <!-- Код -->
+                    <pre class="projects__item-code">
+                        <code>&lt;div&gt;Пример кода&lt;/div&gt;</code>
+                    </pre>
+                </li>
+                <li class="projects__item">
+                    <h3 class="projects__item-title">Проект 2</h3>
+                    <p class="projects__item-description">Описание проекта 2.</p>
+                    <!-- Упорядоченный список -->
+                    <ol class="projects__item-steps">
+                        <li>Проведено исследование</li>
+                        <li>Создан прототип</li>
+                        <li>Внесены изменения</li>
+                        <li>Согласован прототип</li>
+                        <li>Реализован проект</li>
+                    </ol>
+                </li>
+                <li class="projects__item">
+                    <h3 class="projects__item-title">Проект 3</h3>
+                    <p class="projects__item-description">Описание проекта 3.</p>
+                    <!-- Несортированный список -->
+                    <ul class="projects__item-technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Блок footer -->
+    <footer class="footer">
+        <p class="footer__text">© 2024 Светлана. Все права защищены.</p>
+        <!-- Ссылка наверх страницы -->
+        <p><a href="#top" class="footer__link">Наверх</a></p>
+    </footer>
+</body>
+</html>
